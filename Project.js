@@ -59,9 +59,9 @@ function Time() {
   function fo(seconds) {
     const minutes = Math.floor(seconds / 60)
     const secs = seconds % 60;
-    return `${minutes.toString().padStart(2, "0")}:${secs
+    return `${minutes.toString().padStart(2)}:${secs
       .toString()
-      .padStart(2, "0")}`
+      .padStart(2,0)}`
   }
 
   return (
